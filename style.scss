@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    header > .nav {
+ //       border: 2px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        background-color: white;
+        z-index: 99;
+        .logo {
+            padding-left: 20px;
+            width: 40%;
+        }
+        .nav-buttons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+//            border: 1px solid red;
+            width: 60%;
+            ul {
+//                border: 1px solid black;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                width: 100%;
+                margin: 0px;
+                li {
+                    list-style: none;
+                } 
+            }
+        }
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 850px;
+        text-align: center;
+        margin: 50px 0px 80px 0px;
+        .carousel-caption {
+            bottom: 60%;
+            h5 {
+                color: orange;
+                text-transform: uppercase;
+            }
+            h3 {
+                font-family: "Exo 2", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 800;
+                font-style: normal;
+                font-size: 40px;
+            }
+            button {
+                height: 45px;
+                width: 100px;
+                border: 1px solid white;
+                border-radius: 15px;
+                background-color: rgba(255, 255, 255, 0.004);
+                color: white;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+            button:hover {
+                color: #ffffff81;
+                border: 1px solid #ffffff81;;
+            }
+        }
+        .slider {
+            .slick-prev:before,
+            .slick-next:before {
+            color: black;
+            }
+            width: 90vw;
+            align-self: center;
+            .card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 292.19px;
+                border: 0px solid black;
+                h2 {
+                    font-size: 18px;
+                    margin: 0px;
+                }
+                p {
+                    font-size: 14px;
+                    color: #626262;
+                }
+                &-cover {
+                    display: flex;
+                    justify-content: center;
+                    width: 262px;
+                    height: 186px;
+                    background-color: #F3F4F7;
+                    border-radius: 10px;
+                    img {
+                        height: 186px;
+                        width: 186px;
+                        align-self: center;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        background-color: #F3F4F7;
+        padding: 30px 0px 0px 0px;
+        text-align: center;
+        font-size: 14px;
+        p {
+            color: #626262;
+            margin: 0px;
+            margin-left: 5px;
+        }
+        .links {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            //border: 1px solid red;
+            width: 100%;
+            height: fit-content;
+            margin-bottom: 10px;
+            ul {
+                list-style-type: none;
+                margin: 0px 0px;
+                padding: 0px;
+                li {
+                    line-height: 2;
+                    font-weight: 300;
+                    color: #626262;
+                    cursor: pointer;
+                }
+            }
+            .footer_link {
+                align-self: self-start;
+                //border: 1px solid red;
+                height: 100%;
+                width: 70%;
+                text-align: start;
+                padding-left: 5%;
+            }
+            .footer_contact {
+                //border: 1px solid black;
+                align-self: self-start;
+                text-align:start;
+                width: 25%;
+                height: 100%;
+                margin-right: 10%;
+                padding-left: 5%;
+            }
+        }
+    }
+}
